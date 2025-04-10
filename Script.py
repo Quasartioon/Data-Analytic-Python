@@ -1,7 +1,6 @@
-import pandas as pd 
+import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-
+import matplotlib as plt
 feminicidio_df = pd.read_csv('feminicidio_2023.csv', sep=';') # Lê o csv/planilha de feminicidio em Minas Gerais
 
 # Ajustando os dados
@@ -68,7 +67,7 @@ casos_tipo.columns = ['tentado_consumado', 'quantidade']
 print(casos_tipo)
 
 plt.figure(figsize=(8, 5))
-plt.bar(casos_tipo['tentado_consumado'], casos_por_tipo['quantidade'], color=['red', 'green'])
+plt.bar(casos_tipo['tentado_consumado'], casos_tipo['quantidade'], color=['red', 'green'])
 plt.title('Casos Tentados vs Consumados - 2023 (MG)')
 plt.ylabel('Quantidade de Casos')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
@@ -82,7 +81,7 @@ casos_risp.columns = ['risp', 'quantidade']
 print(casos_risp)
 
 plt.figure(figsize=(10, 7))
-plt.barh(casos_por_risp['risp'], casos_por_risp['quantidade'], color='purple')
+plt.barh(casos_risp['risp'], casos_risp['quantidade'], color='purple')
 plt.title('Casos por RISP - 2023 (MG)')
 plt.xlabel('Quantidade de Casos')
 plt.ylabel('RISP')
