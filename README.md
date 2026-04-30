@@ -54,8 +54,8 @@ O projeto foi desenvolvido em Python utilizando bibliotecas voltadas para análi
 * matplotlib → geração de gráficos
 
 ## Leitura e Tratamento dos Dados
-O script realiza a leitura de um arquivo .csv contendo os dados de feminicídio: 
-```
+O script realiza a leitura de um arquivo `<.csv>` contendo os dados de feminicídio: 
+``` python 
 feminicidio_df = pd.read_csv('feminicidio_2023.csv', sep=';')
 ```
 Principais etapas de tratamento:
