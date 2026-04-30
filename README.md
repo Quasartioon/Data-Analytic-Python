@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
 # Análise de Dados de Feminicídio em Minas Gerais
 Este projeto utiliza dados de feminicídios em Minas Gerais para analisar padrões, compreender a violência de gênero e apoiar a criação de políticas públicas mais eficazes.  
 ### Objetivo
