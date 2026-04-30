@@ -45,3 +45,22 @@ A análise contínua dos dados permite:
 ## Conclusão
 
 O uso de dados sobre feminicídios em Minas Gerais contribui para uma compreensão mais profunda do problema e para o desenvolvimento de soluções mais eficazes, promovendo segurança e igualdade de gênero. 
+
+# Documentação do Código  
+O projeto foi desenvolvido em Python utilizando bibliotecas voltadas para análise de dados e visualização.
+## Tecnologias Utilizadas
+* pandas → manipulação e análise de dados
+* numpy → operações numéricas
+* matplotlib → geração de gráficos
+
+## Leitura e Tratamento dos Dados
+O script realiza a leitura de um arquivo .csv contendo os dados de feminicídio: 
+```
+feminicidio_df = pd.read_csv('feminicidio_2023.csv', sep=';')
+```
+Principais etapas de tratamento:
+
+* Limpeza da coluna de datas (data_fato)
+* Conversão para formato datetime
+* Extração do mês para análises temporais
+* Identificação de possíveis erros de conversão  
